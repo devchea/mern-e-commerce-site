@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import express from 'express'
 
-const result = dotenv.config({path: `/../.env`})
+const result = dotenv.config({path: `/../.env`}
 const app = express()
 
 
