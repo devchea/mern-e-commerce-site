@@ -1,14 +1,15 @@
-import dotenv from 'dotenv'
-import express from 'express'
+require("dotenv").config()
+const express = require("express")
+const connectDB = require("./config/db")
+const productRoutes = require('./routes/productRoutes')
 
-const result = dotenv.config({path: `/../.env`}
+connectDB()
+
 const app = express()
 
+app.use(express.json())
 
-// if (result.error) {
-//     throw result.error
-// }
-// console.log(result.parsed)
+app.use("/api/products", productRoutes)
 
 const port = process.env.PORT || 5000
 
