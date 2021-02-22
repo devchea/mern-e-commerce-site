@@ -4,7 +4,6 @@ function App() {
   return (
     <div className="App">
       {/* stuff */}
-      <h1>App</h1>
       <section className="App h-screen w-full flex justify-center items-center bg-green-500">
       <div className="w-full max-w-md bg-gray-800" >
         <form action="" className=" bg-white shadow-md rounded px-8 py-8 pt-8">
